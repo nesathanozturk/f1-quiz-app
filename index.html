@@ -18,11 +18,11 @@
         <button id="click" class="bg-red-600 hover:bg-red-800 w-28 p-2 mr-3 rounded-md text-xl hover:scale-x-110 hover:scale-y-110 hover:transition tracking-widest">Click</button>
     </main>
     <!-- Quiz Container -->
-        <div class="container w-[37.5rem] p-[1.5rem] bg-red-700 rounded-lg overflow-hidden text-white" id="quiz">
-            <div class="header">
-                <p class="text-xl" id="question_id">id</p>
+        <div class="bg-gray-300 bg-opacity-70 rounded-lg" id="quiz">
+            <div class="header container w-[37.5rem] p-[2.2rem] overflow-hidden text-black">
+                <p class="text-xl opacity-100" id="question_id">id</p>
                 <h1 class="text-center text-2xl tracking-widest" id="question">Question</h1>
-                <ul class="ml-8">
+                <ul class="ml-8 mb-10">
                     <li>
                         <input type="radio" name="answer" class="answer" id="a">
                         <label for="a" id="answer_a">Question</label>
@@ -44,10 +44,10 @@
                         <label for="e" id="answer_e">Question</label>
                     </li>
                 </ul>
-            </div>
-            <div class="buttons flex justify-between items-center">
-                <button class="bg-white w-28 mt-3 ml-2 rounded-md text-2xl text-black tracking-widest" id="back">Back</button>
-                <button class="bg-white w-28 mt-3 mr-2 rounded-md text-2xl text-black tracking-widest" id="next">Next</button>
+                <div class="buttons flex justify-between items-center">
+                    <button class="bg-red-700 w-32 p-1 rounded-md text-2xl text-white tracking-widest" id="back">Back</button>
+                    <button class="bg-red-700 w-32 p-1 rounded-md text-2xl text-white tracking-widest" id="next">Next</button>
+                </div>
             </div>
         </div>
         <!-- Javascript -->

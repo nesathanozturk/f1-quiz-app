@@ -13,4 +13,11 @@
     main {
         letter-spacing: 5px;
     }
+    ul li {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+    }
+    label {
+        cursor: pointer;
+    }
 }

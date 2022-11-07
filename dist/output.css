@@ -581,21 +581,24 @@ label {
   margin: 0px;
 }
 
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
+.ml-48{
+  margin-left: 12rem;
 }
 
 .mb-4{
   margin-bottom: 1rem;
 }
 
-.mb-2{
-  margin-bottom: 0.5rem;
-}
-
 .mr-3{
   margin-right: 0.75rem;
+}
+
+.mb-7{
+  margin-bottom: 1.75rem;
 }
 
 .ml-8{
@@ -604,50 +607,6 @@ label {
 
 .mb-10{
   margin-bottom: 2.5rem;
-}
-
-.mb-3{
-  margin-bottom: 0.75rem;
-}
-
-.mb-5{
-  margin-bottom: 1.25rem;
-}
-
-.mb-8{
-  margin-bottom: 2rem;
-}
-
-.mb-7{
-  margin-bottom: 1.75rem;
-}
-
-.ml-12{
-  margin-left: 3rem;
-}
-
-.ml-32{
-  margin-left: 8rem;
-}
-
-.ml-80{
-  margin-left: 20rem;
-}
-
-.ml-64{
-  margin-left: 16rem;
-}
-
-.ml-56{
-  margin-left: 14rem;
-}
-
-.ml-52{
-  margin-left: 13rem;
-}
-
-.ml-48{
-  margin-left: 12rem;
 }
 
 .box-border{
@@ -670,20 +629,16 @@ label {
   height: 100vh;
 }
 
+.w-36{
+  width: 9rem;
+}
+
 .w-28{
   width: 7rem;
 }
 
 .w-\[37\.5rem\]{
   width: 37.5rem;
-}
-
-.w-32{
-  width: 8rem;
-}
-
-.w-36{
-  width: 9rem;
 }
 
 .flex-col{
@@ -714,6 +669,11 @@ label {
   border-radius: 0.5rem;
 }
 
+.bg-red-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
+}
+
 .bg-red-600{
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
@@ -724,21 +684,16 @@ label {
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
-.bg-red-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-70{
   --tw-bg-opacity: 0.7;
 }
 
-.p-0{
-  padding: 0px;
-}
-
 .p-2{
   padding: 0.5rem;
+}
+
+.p-0{
+  padding: 0px;
 }
 
 .p-\[2\.2rem\]{
@@ -757,14 +712,24 @@ label {
   font-family: Koulen, cursive;
 }
 
-.text-6xl{
-  font-size: 3.75rem;
-  line-height: 1;
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-6xl{
+  font-size: 3.75rem;
+  line-height: 1;
 }
 
 .text-2xl{
@@ -774,21 +739,6 @@ label {
 
 .text-xl{
   font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-lg{
-  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
@@ -804,10 +754,6 @@ label {
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.opacity-100{
-  opacity: 1;
 }
 
 .hover\:scale-x-110:hover{

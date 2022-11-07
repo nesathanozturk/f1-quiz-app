@@ -171,9 +171,9 @@ nextBtn.addEventListener('click', () => {
             loadQuiz();
         } else {
             header.innerHTML = `
-            <h1 class="js-h1 mb-2 text-4xl text-center">Congratulations!</h1>
-            <h2 class="js-h2 mb-2 text-3xl text-center">You answered ${score}/${data.length} questions correctly!</h2>
-            <button class="js-btn bg-red-700 w-36 p-2 ml-48 rounded-md text-lg text-white text-center tracking-widest" onclick="location.reload()">Try again</button>
+            <h1 class="js_h1 mb-2 text-4xl text-center">Congratulations!</h1>
+            <h2 class="js_h2 mb-2 text-3xl text-center">You answered ${score}/${data.length} questions correctly!</h2>
+            <button class="js_btn bg-red-700 w-36 p-2 ml-48 rounded-md text-lg text-white text-center tracking-widest" onclick="location.reload()">Try again</button>
             `;
         };
     };

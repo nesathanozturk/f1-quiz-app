@@ -16,7 +16,7 @@ const data = [
         a: "George Russell",
         b: "Max Verstappen",
         c: "Sergio Perez",
-        d: "Valteri Bottas",
+        d: "Valtteri Bottas",
         e: "Lando Norris",
         correct: "c",
     },
@@ -33,7 +33,7 @@ const data = [
     {
         id: "Question 4",
         question: "Who is the team principal of Mercedes-AMG F1?",
-        a: "Toto Wolf",
+        a: "Toto Wolff",
         b: "Claire Williams",
         c: "Rob Denis",
         d: "Zak Brown",
@@ -72,7 +72,7 @@ const data = [
     },
     {
         id: "Question 8",
-        question: "How many championships does Michael Schumacher",
+        question: "How many championships does Michael Schumacher?",
         a: "7",
         b: "6",
         c: "8",

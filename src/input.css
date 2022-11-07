@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+    body {
+        background-image: url(/bg-photo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

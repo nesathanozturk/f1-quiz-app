@@ -547,6 +547,12 @@ video {
   }
 }
 
+body {
+  background-image: url(/bg-photo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .m-0 {
   margin: 0px;
 }

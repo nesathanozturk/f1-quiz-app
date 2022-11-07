@@ -569,8 +569,20 @@ label {
   cursor: pointer;
 }
 
+.vsb {
+  visibility: visible;
+}
+
 .hd {
   display: none;
+}
+
+.visible{
+  visibility: visible;
+}
+
+.invisible{
+  visibility: hidden;
 }
 
 .m-0{
@@ -627,6 +639,10 @@ label {
 
 .w-32{
   width: 8rem;
+}
+
+.w-\[3\.5rem\]{
+  width: 3.5rem;
 }
 
 .flex-col{

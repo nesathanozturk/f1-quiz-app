@@ -22,7 +22,7 @@
         cursor: pointer;
     }
     .vsb {
-        display: flex;
+        visibility: visible;
     }
     .hd {
         display: none;

@@ -600,6 +600,14 @@ label {
   margin-right: 0.5rem;
 }
 
+.mt-1{
+  margin-top: 0.25rem;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
@@ -652,6 +660,10 @@ label {
   border-radius: 0.125rem;
 }
 
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+
 .bg-red-600{
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
@@ -677,6 +689,14 @@ label {
 
 .p-\[1rem\]{
   padding: 1rem;
+}
+
+.p-\[2rem\]{
+  padding: 2rem;
+}
+
+.p-\[1\.5rem\]{
+  padding: 1.5rem;
 }
 
 .text-center{

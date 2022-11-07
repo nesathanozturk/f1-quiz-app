@@ -1,15 +1,41 @@
+@media screen and (min-width: 495px) and (max-width: 1244px) {
+    main {
+        text-align: center;
+    }
+}
+
 @media screen and (min-width: 495px) and (max-width: 618px) {
     .header {
         width: 30rem
     }
+    .js-btn {
+        margin-left: 8.5rem;
+    }
 }
 
 @media screen and (max-width: 495px) {
+    main {
+        text-align: center;
+    }
+    .main-header {
+        font-size: 1.7rem;
+    }
+    .main-alt {
+        font-size: 1.5rem;
+    }
+    .main-small {
+        font-size: 1.5rem;
+    }
+    #click {
+        width: 5.5rem;
+        padding: 0.3rem;
+        font-size: 1.3rem;
+    }
     .header {
         width: 20rem
     }
     .header-title {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
     }
     ul li {
         font-size: 1.3rem; 
@@ -17,11 +43,20 @@
     #back {
         width: 6rem;
         padding: 2px;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     #next {
         width: 6rem;
         padding: 2px;  
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+    }
+    .js-h1 {
+        font-size: 1.9rem;
+    }
+    .js-h2 {
+        font-size: 1.6rem;
+    }
+    .js-btn {
+        margin-left: 3.5rem;
     }
 }

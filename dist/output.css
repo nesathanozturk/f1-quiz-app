@@ -577,6 +577,10 @@ label {
   display: none;
 }
 
+.visible{
+  visibility: visible;
+}
+
 .m-0{
   margin: 0px;
 }

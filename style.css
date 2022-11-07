@@ -13,6 +13,7 @@
     }
 }
 
+/* For Mobile */
 @media screen and (max-width: 495px) {
     main {
         text-align: center;

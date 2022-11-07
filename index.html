@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>F1 Quiz App</title>
 </head>
 <body class="m-0 p-0 box-border h-screen flex justify-center items-center flex-col text-white font-koulen tracking-widest animate__animated animate__fadeIn">
     <!-- Main Container-->
     <main class="flex justify-center items-center flex-col">
-        <h1 class="main-header mb-4 text-6xl ">Welcome to the my Formula 1 quiz app!</h1>
+        <h1 class="main-header mb-4 text-xs md:text-2xl sm:text-6xl">Welcome to the my Formula 1 quiz app!</h1>
         <p class="mb-4 text-3xl">If you want to test your knowledge of Formula 1, this quiz  is just for you!</p>
         <p class="mb-4 text-3xl">If you are ready, let's get the questions!</p>
         <p class="mb-2 text-2xl">Click to button to get to the questions!</p>
@@ -21,7 +22,7 @@
         <div id="container" class="bg-gray-300 bg-opacity-70 rounded-lg hd animate__animated animate__fadeIn">
             <div class="header w-[37.5rem] p-[2.2rem] overflow-hidden text-black">
                 <p class="text-xl mb-4" id="question_id"></p>
-                <h1 class="text-center text-3xl tracking-widest mb-7" id="question"></h1>
+                <h1 class="header-title text-center text-3xl tracking-widest mb-7" id="question"></h1>
                 <ul class="ml-8 mb-10">
                     <li>
                         <input type="radio" name="answer" class="answer" id="a">

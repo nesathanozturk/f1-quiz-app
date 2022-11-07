@@ -1,0 +1,27 @@
+@media screen and (min-width: 495px) and (max-width: 618px) {
+    .header {
+        width: 30rem
+    }
+}
+
+@media screen and (max-width: 495px) {
+    .header {
+        width: 20rem
+    }
+    .header-title {
+        font-size: 1.6rem;
+    }
+    ul li {
+        font-size: 1.3rem; 
+    }
+    #back {
+        width: 6rem;
+        padding: 2px;
+        font-size: 1.2rem;
+    }
+    #next {
+        width: 6rem;
+        padding: 2px;  
+        font-size: 1.2rem;
+    }
+}

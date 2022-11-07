@@ -21,4 +21,10 @@
     label {
         cursor: pointer;
     }
+    .vsb {
+        display: block;
+    }
+    .hd {
+        display: none;
+    }
 }

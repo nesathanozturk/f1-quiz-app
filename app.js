@@ -1,13 +1,14 @@
-const quizData = [
+// Quiz questions and answers:
+const data = [
     {
         id: "1",
-        question: "Who is the champion of 2021 Formula 1 season?",
+        question: "Who was the 2021 world champion?",
         a: "Charles Leclerc",
-        b: "Lewis Hamilton(be realistic)",
+        b: "Lewis Hamilton",
         c: "Sebastian Vettel",
         d: "Fernando Alonso",
         e: "Max Verstappen",
-        correct: "b",
+        correct: "e",
     },
     {
         id: "2",
@@ -69,15 +70,109 @@ const quizData = [
         e: "Williams",
         correct: "b",
     },
+    {
+        id: "8",
+        question: "How many championships does Michael Schumacher",
+        a: "7",
+        b: "6",
+        c: "8",
+        d: "4",
+        e: "5",
+        correct: "a",
+    },
+    {
+        id: "9",
+        question: "Who has the most wins ever?",
+        a: "Michael Schumacher",
+        b: "Alain Prost",
+        c: "Lewis Hamilton",
+        d: "Mika Hakkinen",
+        e: "Ayrton Senna",
+        correct: "c",
+    },
+    {
+        id: "10",
+        question: "What group of people have the most wins put together?",
+        a: "Michael Schumacher and Kimi Raikkonen",
+        b: "Lewis Hamilton and Max Verstappen",
+        c: "Alain Prost and Ayrton Senna",
+        d: "Sebastian Vettel and Fernando Alonso",
+        e: "Niki Lauda and Nelson Piquet",
+        correct: "b",
+    },  
 ]
 
-
+// Elements:
 const clickBtn = document.getElementById("click");
 const main = document.querySelector("main")
 const container = document.getElementById("container");
+const questionEl = document.getElementById("question");
+const answerEl = document.querySelectorAll(".answer");
+const ans_a = document.getElementById("answer_a");
+const ans_b = document.getElementById("answer_b");
+const ans_c = document.getElementById("answer_c");
+const ans_d = document.getElementById("answer_d");
+const ans_e = document.getElementById("answer_e");
+const backBtn = document.getElementById("back");
+const nextBtn = document.getElementById("next");
 
-// Hidden Main and Visible Container:
+// To hide the "main" and make the container visible:
 clickBtn.addEventListener("click", () => {
     main.classList.toggle("hidden");
     container.classList.add("block");
+});
+
+// Quiz question and score:
+let questionQuiz = 0;
+let score = 0;
+
+// Functions:
+loadQuiz();
+function loadQuiz() {
+    deleteAnswers();
+
+    const questionQuizData = data[questionQuiz];
+    questionEl.innerText = questionQuizData.question;
+    ans_a.innerText = questionQuizData.a;
+    ans_b.innerText = questionQuizData.b;
+    ans_c.innerText = questionQuizData.c;
+    ans_d.innerText = questionQuizData.d;
+    ans_e.innerText = questionQuizData.e;
+};
+
+function deleteAnswers() {
+    answerEl.forEach(answerEls => answerEls.checked = false);
+};
+
+function selected() {
+    let answer;
+
+    answerEl.forEach(answerEls => {
+        if (answerEls.checked) {
+            answer = answerEls.id;
+        };
+    });
+    return answer;
+};
+
+nextBtn.addEventListener('click', () => {
+    const answer = selected();
+
+    if (answer) {
+        if (answer === data[questionQuiz].correct) {
+            score++;
+        }
+        questionQuiz++;
+
+        if (questionQuiz < data.length) {
+            loadQuiz();
+
+        } else {
+            container.innerHTML = `
+            <h1>Congratulations!</h1>
+            <h2>You answered ${score}/${data.length} questions correctly!</h2>
+            <button onclick="locaiton.reload()">Try again</button>
+            `;
+        };
+    };
 });

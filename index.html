@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+    name= "description"
+    content= "Formula One quiz app."
+    />
+    <meta 
+    name= "keywords"
+    content= "Formula, Formula 1, Race, Quiz, App, Quiz App, Website"
+    />
+    <link rel="icon" href="/img/favicon.ico" />
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>F1 Quiz App</title>
+</head>
+<body class="m-0 p-0 box-border h-screen flex justify-center items-center flex-col font-koulen tracking-widest animate__animated animate__fadeIn">
+    <!-- Main Container-->
+    <main class="flex justify-center items-center flex-col text-white">
+        <h1 class="main_header mb-4 text-6xl">Welcome to the my Formula 1 quiz app!</h1>
+        <p class="main_alt mb-4 text-3xl">If you want to test your knowledge of Formula 1, this quiz  is just for you!</p>
+        <p class="main_alt mb-4 text-3xl">If you are ready, let's get the questions!</p>
+        <p class="main_small mb-2 text-2xl">Click to button to get to the questions!</p>
+        <button id="click" class="bg-red-600 hover:bg-red-800 w-32 p-[0.4rem] mr-3 rounded-md text-2xl hover:scale-x-105 hover:scale-y-105 hover:transition tracking-widest">Click</button>
+    </main>
+    <!-- Quiz Container -->
+        <div id="container" class="bg-gray-300 bg-opacity-70 rounded-lg hd animate__animated animate__fadeIn">
+            <div class="header w-[37.5rem] p-[2.2rem] overflow-hidden text-black">
+                <p class="text-xl mb-4" id="question_id"></p>
+                <h1 class="header_title text-center text-3xl tracking-widest mb-7" id="question"></h1>
+                <ul class="ml-8 mb-10">
+                    <li>
+                        <input type="radio" name="answer" class="answer" id="a">
+                        <label for="a" id="answer_a"></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" class="answer" id="b">
+                        <label for="b" id="answer_b"></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" class="answer" id="c">
+                        <label for="c" id="answer_c"></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" class="answer" id="d">
+                        <label for="d" id="answer_d"></label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" class="answer" id="e">
+                        <label for="e" id="answer_e"></label>
+                    </li>
+                </ul>
+                <div class="buttons flex justify-between items-center">
+                    <button class="backBtn bg-red-700 w-36 p-1 rounded-md text-2xl text-white tracking-widest" id="back">Back</button>
+                    <button class="nextBtn bg-red-700 w-36 p-1 rounded-md text-2xl text-white tracking-widest" id="next">Next</button>
+                </div>
+            </div>
+        </div>
+        <!-- Javascript -->
+        <script src="/js/app.js"></script>    
+</body>
+</html>

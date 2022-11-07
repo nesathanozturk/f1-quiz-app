@@ -569,16 +569,8 @@ label {
   cursor: pointer;
 }
 
-.vsb {
-  display: block;
-}
-
 .hd {
   display: none;
-}
-
-.visible{
-  visibility: visible;
 }
 
 .m-0{

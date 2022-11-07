@@ -581,6 +581,11 @@ label {
   margin: 0px;
 }
 
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -615,6 +620,34 @@ label {
 
 .mb-7{
   margin-bottom: 1.75rem;
+}
+
+.ml-12{
+  margin-left: 3rem;
+}
+
+.ml-32{
+  margin-left: 8rem;
+}
+
+.ml-80{
+  margin-left: 20rem;
+}
+
+.ml-64{
+  margin-left: 16rem;
+}
+
+.ml-56{
+  margin-left: 14rem;
+}
+
+.ml-52{
+  margin-left: 13rem;
+}
+
+.ml-48{
+  margin-left: 12rem;
 }
 
 .box-border{
@@ -741,6 +774,21 @@ label {
 
 .text-xl{
   font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 

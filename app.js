@@ -1,7 +1,7 @@
 // Quiz questions and answers:
 const data = [
     {
-        id: "1",
+        id: "Question 1",
         question: "Who was the 2021 world champion?",
         a: "Charles Leclerc",
         b: "Lewis Hamilton",
@@ -11,7 +11,7 @@ const data = [
         correct: "e",
     },
     {
-        id: "2",
+        id: "Question 2",
         question: "Who won the race of 2020 Sakhir?",
         a: "George Russell",
         b: "Max Verstappen",
@@ -21,7 +21,7 @@ const data = [
         correct: "c",
     },
     {
-        id: "3",
+        id: "Question 3",
         question: "When was Formula 1 founded?",
         a: "1980",
         b: "1943",
@@ -31,7 +31,7 @@ const data = [
         correct: "e",
     },
     {
-        id: "4",
+        id: "Question 4",
         question: "Who is the team principal of Mercedes-AMG F1?",
         a: "Toto Wolf",
         b: "Claire Williams",
@@ -41,7 +41,7 @@ const data = [
         correct: "a",
     },
     {
-        id: "5",
+        id: "Question 5",
         question: "Who will replace Sebastian Vettel in 2021?",
         a: "Sergio Perez",
         b: "Lando Norris",
@@ -51,7 +51,7 @@ const data = [
         correct: "d",
     },
     {
-        id: "6",
+        id: "Question 6",
         question: "In 2013, with which car Sebastian Vettel became Formula 1 champion?",
         a: "RB6",
         b: "RB12",
@@ -61,7 +61,7 @@ const data = [
         correct: "d",
     },
     {
-        id: "7",
+        id: "Question 7",
         question: "What will the Racing Point team called in 2021?",
         a: "McLaren",
         b: "Aston Martin",
@@ -71,7 +71,7 @@ const data = [
         correct: "b",
     },
     {
-        id: "8",
+        id: "Question 8",
         question: "How many championships does Michael Schumacher",
         a: "7",
         b: "6",
@@ -81,7 +81,7 @@ const data = [
         correct: "a",
     },
     {
-        id: "9",
+        id: "Question 9",
         question: "Who has the most wins ever?",
         a: "Michael Schumacher",
         b: "Alain Prost",
@@ -91,7 +91,7 @@ const data = [
         correct: "c",
     },
     {
-        id: "10",
+        id: "Question 10",
         question: "What group of people have the most wins put together?",
         a: "Michael Schumacher and Kimi Raikkonen",
         b: "Lewis Hamilton and Max Verstappen",
@@ -106,6 +106,8 @@ const data = [
 const clickBtn = document.getElementById("click");
 const main = document.querySelector("main")
 const container = document.getElementById("container");
+const header = document.querySelector(".header");
+const idEl = document.getElementById("question_id");
 const questionEl = document.getElementById("question");
 const answerEl = document.querySelectorAll(".answer");
 const ans_a = document.getElementById("answer_a");
@@ -132,6 +134,7 @@ function loadQuiz() {
     deleteAnswers();
 
     const questionQuizData = data[questionQuiz];
+    idEl.innerText = questionQuizData.id;
     questionEl.innerText = questionQuizData.question;
     ans_a.innerText = questionQuizData.a;
     ans_b.innerText = questionQuizData.b;
@@ -166,12 +169,11 @@ nextBtn.addEventListener('click', () => {
 
         if (questionQuiz < data.length) {
             loadQuiz();
-
         } else {
-            container.innerHTML = `
-            <h1>Congratulations!</h1>
-            <h2>You answered ${score}/${data.length} questions correctly!</h2>
-            <button onclick="locaiton.reload()">Try again</button>
+            header.innerHTML = `
+            <h1 class="mb-2 text-4xl text-center">Congratulations!</h1>
+            <h2 class="mb-2 text-3xl text-center">You answered ${score}/${data.length} questions correctly!</h2>
+            <button class="bg-red-700 w-36 p-2 ml-48 rounded-md text-lg text-white text-center tracking-widest" onclick="location.reload()">Try again</button>
             `;
         };
     };

@@ -3,6 +3,5 @@ const main = document.querySelector("main")
 const x = document.getElementsByClassName("container");
 
 hiddenBtn.addEventListener("click", () => {
-    main.classList.toggle("hidden");
-    x.classList.toggle("visible")
+ 
 })

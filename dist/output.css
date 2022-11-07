@@ -562,6 +562,7 @@ main {
 ul li {
   font-size: 1.2rem;
   margin: 1rem 0;
+  letter-spacing: 3px;
 }
 
 label {
@@ -588,8 +589,8 @@ label {
   margin-left: 2rem;
 }
 
-.mb-1{
-  margin-bottom: 0.25rem;
+.mt-3{
+  margin-top: 0.75rem;
 }
 
 .ml-2{
@@ -598,14 +599,6 @@ label {
 
 .mr-2{
   margin-right: 0.5rem;
-}
-
-.mt-1{
-  margin-top: 0.25rem;
-}
-
-.mt-3{
-  margin-top: 0.75rem;
 }
 
 .box-border{
@@ -656,10 +649,6 @@ label {
   border-radius: 0.375rem;
 }
 
-.rounded-sm{
-  border-radius: 0.125rem;
-}
-
 .rounded-lg{
   border-radius: 0.5rem;
 }
@@ -685,14 +674,6 @@ label {
 
 .p-2{
   padding: 0.5rem;
-}
-
-.p-\[1rem\]{
-  padding: 1rem;
-}
-
-.p-\[2rem\]{
-  padding: 2rem;
 }
 
 .p-\[1\.5rem\]{

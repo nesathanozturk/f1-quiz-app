@@ -1,6 +1,8 @@
-/*
-! tailwindcss v3.2.2 | MIT License | https://tailwindcss.com
-*/
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+/* Font */
+
+/* ! tailwindcss v3.2.2 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -419,7 +421,7 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -466,7 +468,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -513,36 +515,36 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
+.container{
   width: 100%;
 }
 
-@media (min-width: 640px) {
-  .container {
+@media (min-width: 640px){
+  .container{
     max-width: 640px;
   }
 }
 
-@media (min-width: 768px) {
-  .container {
+@media (min-width: 768px){
+  .container{
     max-width: 768px;
   }
 }
 
-@media (min-width: 1024px) {
-  .container {
+@media (min-width: 1024px){
+  .container{
     max-width: 1024px;
   }
 }
 
-@media (min-width: 1280px) {
-  .container {
+@media (min-width: 1280px){
+  .container{
     max-width: 1280px;
   }
 }
 
-@media (min-width: 1536px) {
-  .container {
+@media (min-width: 1536px){
+  .container{
     max-width: 1536px;
   }
 }
@@ -553,97 +555,66 @@ body {
   background-size: cover;
 }
 
-.m-0 {
+.m-0{
   margin: 0px;
 }
 
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
-.mb-12 {
-  margin-bottom: 3rem;
-}
-
-.mb-96 {
-  margin-bottom: 24rem;
-}
-
-.box-border {
+.box-border{
   box-sizing: border-box;
 }
 
-.flex {
+.flex{
   display: flex;
 }
 
-.hidden {
+.hidden{
   display: none;
 }
 
-.h-screen {
+.h-screen{
   height: 100vh;
 }
 
-.list-none {
+.list-none{
   list-style-type: none;
 }
 
-.flex-col {
+.flex-col{
   flex-direction: column;
 }
 
-.items-center {
+.items-center{
   align-items: center;
 }
 
-.justify-center {
+.justify-center{
   justify-content: center;
 }
 
-.p-0 {
+.p-0{
   padding: 0px;
 }
 
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
+.font-koulen{
+  font-family: Koulen, cursive;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-6xl {
+.text-6xl{
   font-size: 3.75rem;
   line-height: 1;
 }
 
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
-.text-white {
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.opacity-10 {
-  opacity: 0.1;
 }

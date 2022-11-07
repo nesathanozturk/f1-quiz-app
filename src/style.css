@@ -18,13 +18,13 @@
     main {
         text-align: center;
     }
-    .main-header {
+    .main_header {
         font-size: 1.7rem;
     }
-    .main-alt {
+    .main_alt {
         font-size: 1.5rem;
     }
-    .main-small {
+    .main_small {
         font-size: 1.5rem;
     }
     #click {
@@ -35,7 +35,7 @@
     .header {
         width: 20rem
     }
-    .header-title {
+    .header_title {
         font-size: 1.7rem;
     }
     ul li {

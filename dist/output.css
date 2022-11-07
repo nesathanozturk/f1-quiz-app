@@ -609,6 +609,10 @@ label {
   box-sizing: border-box;
 }
 
+.block{
+  display: block;
+}
+
 .flex{
   display: flex;
 }

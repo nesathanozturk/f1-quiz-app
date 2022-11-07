@@ -41,23 +41,23 @@
     ul li {
         font-size: 1.3rem; 
     }
-    #back {
+    .backBtn {
         width: 6rem;
         padding: 2px;
         font-size: 1.3rem;
     }
-    #next {
+    .nextBtn {
         width: 6rem;
         padding: 2px;  
         font-size: 1.3rem;
     }
-    .js-h1 {
+    .js_h1 {
         font-size: 1.9rem;
     }
-    .js-h2 {
+    .js_h2 {
         font-size: 1.6rem;
     }
-    .js-btn {
+    .js_btn {
         margin-left: 3.5rem;
     }
 }

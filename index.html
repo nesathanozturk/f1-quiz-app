@@ -5,9 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
-    <title>Document</title>
+    <title>F1 Quiz App</title>
 </head>
-<body>
-    
+<body class="m-0 p-0 box-border list-none h-screen">
+    <!-- Main Container-->
+    <main class="flex justify-center items-center flex-col">
+        <h1>Welcome to the my Formula 1 quiz app.</h1>
+        <p>If you are want to test your knowledge of Formula 1, this quiz  is just for you!</p>
+        <p>If you are ready, let's get the questions!</p>
+        <small>Click to button to get to the questions</small>
+        <button class="click">Click</button>
+    </main>
+    <!-- Quiz Container -->
+        <div class="container hidden" id="quiz">
+            <div class="header">
+                <h2 id="question">Question</h2>
+                <ul>
+                    <li>
+                        <input type="radio" name="answer" class="answer" id="a">
+                        <label for="a" id="answer_a">Question</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" class="answer" id="b">
+                        <label for="b" id="answer_b">Question</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" class="answer" id="c">
+                        <label for="c" id="answer_c">Question</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" class="answer" id="d">
+                        <label for="d" id="answer_d">Question</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="answer" class="answer" id="e">
+                        <label for="e" id="answer_e">Question</label>
+                    </li>
+                </ul>
+            </div>
+            <button id="back">Back</button>
+            <button id="next">Next</button>
+        </div>
+        <!-- Javascript -->
+        <script src="app.js"></script>    
 </body>
 </html>

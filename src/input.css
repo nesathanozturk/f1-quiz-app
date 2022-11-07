@@ -14,17 +14,14 @@
         letter-spacing: 5px;
     }
     ul li {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         margin: 1rem 0;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
     }
     label {
         cursor: pointer;
     }
-    .vsb {
-        visibility: visible;
-    }
     .hd {
         display: none;
     }
-}
+};

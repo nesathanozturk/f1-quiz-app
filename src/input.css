@@ -6,8 +6,11 @@
 @tailwind utilities;
 @layer components {
     body {
-        background-image: url(/bg-photo.jpg);
+        background-image: url(/bg-photo.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    main {
+        letter-spacing: 5px;
     }
 }

@@ -5,7 +5,7 @@
 
 <li>HTML</li>
 <li>Tailwind</li>
-<li>CSS(for responsive)</li>
+<li>CSS(for responsive because i don't like Tailwind's responsive mode)</li>
 <li>Javascript</li>
 
 <br>

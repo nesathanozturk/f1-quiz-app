@@ -92,12 +92,12 @@ const data = [
     },
     {
         id: "Question 10",
-        question: "What group of people have the most wins put together?",
-        a: "Michael Schumacher and Kimi Raikkonen",
-        b: "Lewis Hamilton and Max Verstappen",
-        c: "Alain Prost and Ayrton Senna",
-        d: "Sebastian Vettel and Fernando Alonso",
-        e: "Niki Lauda and Nelson Piquet",
+        question: "Which one of these teams aren’t in F1?",
+        a: "Ferrari",
+        b: "Porsche",
+        c: "Alpine",
+        d: "Alfa Romeo",
+        e: "Haas",
         correct: "b",
     },  
 ]

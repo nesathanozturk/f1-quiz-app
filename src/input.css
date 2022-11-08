@@ -5,11 +5,6 @@
 @tailwind components;
 @tailwind utilities;
 @layer components {
-    body {
-        background-image: url(f1-quiz-app/img/bg-photo.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
     main {
         letter-spacing: 5px;
     }

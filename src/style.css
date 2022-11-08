@@ -1,9 +1,3 @@
-body {
-    background-image: url(/f1-quiz-app/src/img/bg-photo.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 @media screen and (min-width: 495px) and (max-width: 1244px) {
     main {
         text-align: center;

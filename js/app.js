@@ -42,7 +42,7 @@ const data = [
     },
     {
         id: "Question 5",
-        question: "Who will replace Sebastian Vettel in 2021?",
+        question: "Who has replaced Sebastian Vettel in 2021?",
         a: "Sergio Perez",
         b: "Lando Norris",
         c: "Lance Stroll",

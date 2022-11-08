@@ -100,7 +100,7 @@ const data = [
         e: "Haas",
         correct: "b",
     },  
-]
+];
 
 // Elements:
 const clickBtn = document.getElementById("click");
@@ -109,7 +109,7 @@ const container = document.getElementById("container");
 const header = document.querySelector(".header");
 const idEl = document.getElementById("question_id");
 const questionEl = document.getElementById("question");
-const answerEl = document.querySelectorAll(".answer");
+const answerEls = document.querySelectorAll(".answer");
 const ans_a = document.getElementById("answer_a");
 const ans_b = document.getElementById("answer_b");
 const ans_c = document.getElementById("answer_c");
@@ -124,56 +124,79 @@ clickBtn.addEventListener("click", () => {
     container.classList.add("block");
 });
 
-// Quiz question and score:
-let questionQuiz = 0;
+// Quiz questions and score:
+let currentQuestion = 0;
 let score = 0;
 
 // Functions:
 loadQuiz();
 function loadQuiz() {
-    deleteAnswers();
+    deSelectAnswers();
 
-    const questionQuizData = data[questionQuiz];
-    idEl.innerText = questionQuizData.id;
-    questionEl.innerText = questionQuizData.question;
-    ans_a.innerText = questionQuizData.a;
-    ans_b.innerText = questionQuizData.b;
-    ans_c.innerText = questionQuizData.c;
-    ans_d.innerText = questionQuizData.d;
-    ans_e.innerText = questionQuizData.e;
+    const currentQuestionData = data[currentQuestion];
+    idEl.innerText = currentQuestionData.id;
+    questionEl.innerText = currentQuestionData.question;
+    ans_a.innerText = currentQuestionData.a;
+    ans_b.innerText = currentQuestionData.b;
+    ans_c.innerText = currentQuestionData.c;
+    ans_d.innerText = currentQuestionData.d;
+    ans_e.innerText = currentQuestionData.e;
 };
 
-function deleteAnswers() {
-    answerEl.forEach(answerEls => answerEls.checked = false);
+function deSelectAnswers() {
+    answerEls.forEach(answerEl => answerEl.checked = false);
 };
 
-function selected() {
+function getValue() {
     let answer;
 
-    answerEl.forEach(answerEls => {
-        if (answerEls.checked) {
-            answer = answerEls.id;
+    answerEls.forEach(answerEl => {
+        if (answerEl.checked) {
+            answer = answerEl.id;
         };
     });
     return answer;
 };
 
+// Previous Question:
+backBtn.addEventListener("click", () => {
+    if (currentQuestion.valueOf() === 0) {
+        e.preventDefault();
+    } else {
+    currentQuestion--;
+    loadQuiz();
+    }
+});
+
+// Next Question:
 nextBtn.addEventListener('click', () => {
-    const answer = selected();
+    const answer = getValue();
 
     if (answer) {
-        if (answer === data[questionQuiz].correct) {
+        if (answer === data[currentQuestion].correct) {
             score++;
         }
-        questionQuiz++;
+        currentQuestion++;
 
-        if (questionQuiz < data.length) {
+        if (currentQuestion < data.length) {
             loadQuiz();
-        } else {
-            header.innerHTML = `
-            <h1 class="js_h1 mb-2 text-4xl text-center">Congratulations!</h1>
-            <h2 class="js_h2 mb-2 text-3xl text-center">You answered ${score}/${data.length} questions correctly!</h2>
-            <button class="js_btn bg-red-700 w-36 p-2 ml-48 rounded-md text-lg text-white text-center tracking-widest" onclick="location.reload()">Try again</button>
+        } else if (score > 7) {
+                header.innerHTML = `
+                <h1 class="js_h1 mb-2 text-4xl text-center">Very Good!</h1>
+                <h2 class="js_h2 mb-2 text-3xl text-center">You answered ${score}/${data.length} questions correctly!</h2>
+                <button class="js_btn bg-red-700 w-36 p-2 ml-48 rounded-md text-lg text-white text-center tracking-widest" onclick="location.reload()">Try again</button>
+            `;
+        } else if (score > 3 && score <= 7) {
+                header.innerHTML = `
+                <h1 class="js_h1 mb-2 text-4xl text-center">Not Bad!</h1>
+                <h2 class="js_h2 mb-2 text-3xl text-center">You answered ${score}/${data.length} questions correctly!</h2>
+                <button class="js_btn bg-red-700 w-36 p-2 ml-48 rounded-md text-lg text-white text-center tracking-widest" onclick="location.reload()">Try again</button>
+            `;
+        } else if (score <= 3) {
+                header.innerHTML = `
+                <h1 class="js_h1 mb-2 text-4xl text-center">Go watch Cars 3, not F1!</h1>
+                <h2 class="js_h2 mb-2 text-3xl text-center">You answered ${score}/${data.length} questions correctly!</h2>
+                <button class="js_btn bg-red-700 w-36 p-2 ml-48 rounded-md text-lg text-white text-center tracking-widest" onclick="location.reload()">Try again</button>
             `;
         };
     };

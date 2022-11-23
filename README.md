@@ -5,11 +5,11 @@
 
 <li>HTML</li>
 <li>Tailwind</li>
-<li>CSS(for responsive because i don't like Tailwind's responsive mode)</li>
+<li>CSS(for responsive)</li>
 <li>Javascript</li>
 
 <br>
-**Installation**
+<h1>Installation<h1>
 
  `$ git clone https://github.com/nesathanozturk/f1-quiz-app.git`
 

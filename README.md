@@ -9,7 +9,7 @@
 <li>Javascript</li>
 
 <br>
-<h1>Installation<h1>
+<h1>Installation</h1>
 
  `$ git clone https://github.com/nesathanozturk/f1-quiz-app.git`
 

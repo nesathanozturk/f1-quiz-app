@@ -62,7 +62,7 @@ const data = [
     },
     {
         id: "Question 7",
-        question: "What will the Racing Point team called in 2021?",
+        question: "What was the Racing Point team called in 2021?",
         a: "McLaren",
         b: "Aston Martin",
         c: "Mercedes-AMG",
@@ -161,7 +161,7 @@ function getValue() {
 // Previous Question:
 backBtn.addEventListener("click", () => {
     if (currentQuestion.valueOf() === 0) {
-        e.preventDefault();
+        alert("You can't go back more!");
     } else {
     currentQuestion--;
     loadQuiz();

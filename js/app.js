@@ -161,12 +161,12 @@ function getValue() {
 
 // Previous Question:
 backBtn.addEventListener("click", () => {
-  if (currentQuestion.valueOf() === 0) {
-    e.preventDefault();
-  } else {
+    if (currentQuestion.valueOf() === 0) {
+        alert("You can't go back more!");
+    } else {
     currentQuestion--;
     loadQuiz();
-  }
+    }
 });
 
 // Next Question:
